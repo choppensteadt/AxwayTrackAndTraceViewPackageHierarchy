@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="home" class="container" layout="vertical" backgroundColor="#E9EAEA" title="" >
+		<Menu id="menu" platform="android">
+				<MenuItem id="mtmLogout" title="Logout" onClick="mnuLogoutClicked">Sign out</MenuItem>
+		</Menu>
+		<Label id="lblHomePageHelp1">This app enables users to view the aggregated contents of a package.</Label>
+		<Label id="lblHomePageHelp2">To see the contents of a package, scan its barcode and the app returns a view of the contents.</Label>
+		<Button id="btnScanPackage" image="/images/scan.png" onClick="openScanWindow" toDestination="productHierarchy" />
+		<ActivityIndicator id="activityIndicator" />
+	</Window>
+</Alloy>

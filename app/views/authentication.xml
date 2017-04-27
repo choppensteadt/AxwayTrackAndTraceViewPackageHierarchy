@@ -1,0 +1,25 @@
+<Alloy>
+	<Window id="authentication" onAndroidback="backButtonPressed" class="container" backgroundColor="#E9EAEA" title="" >
+		<Menu id="menu" platform="android">
+			<MenuItem id="mtmScanAgain" title="Scan" onClick="mnuScanAgainClicked" />
+			<MenuItem id="mtmLogout" title="Logout" onClick="mnuLogoutClicked" />
+		</Menu>
+			<ImageView id="imgStatus" />
+			<Label id="lblStatus" />
+			<Label id="lblMessage" />
+			<Label id="lblDetails" />
+			<Label id="lblStatus2" />
+			<ScrollView id="svScrollView" scrollType="vertical" scrollingEnabled="true">
+				<Label id="lblEPCuriLabel" text="Barcode"/>
+				<Label id="lblEPCuri" />
+				<Label id="lblNdcLabel" text="National Drug Code"/>
+				<Label id="lblNdc" />
+				<Label id="lblManufacturerLabel" text="Manufacturer"/>
+				<Label id="lblManufacturer" />
+				<Label id="lblUsageDirectionLabel" text="Usage Directions"/>
+				<Label id="lblUsageDirection" />
+			</ScrollView>
+			<ImageView id="imgFirstImage" />
+		<ActivityIndicator id="activityIndicator" />
+	</Window>
+</Alloy>

@@ -1,0 +1,24 @@
+<Alloy>
+	<Window id="packagehierarchy" onAndroidback="backButtonPressed" class="container" backgroundColor="#E9EAEA" title="" >
+		<Menu id="menu" platform="android">
+			<MenuItem id="mtmScanAgain" title="Scan" onClick="mnuScanAgainClicked" />
+			<MenuItem id="mtmLogout" title="Logout" onClick="mnuLogoutClicked" />
+		</Menu>
+		<Label id="lblParent" onClick="openParent" />
+		<ImageView id="imgUp" image="/images/up2.png" onClick="openParent" />
+		<Label id="lblParentDetail" />
+		<Label id="lblChildCount" />
+		<ListView id="lvwPendingOrders" onItemclick="openChild" defaultItemTemplate="packageHierarchyTemplate">
+            <Templates>
+                <ItemTemplate id="packageHierarchyTemplate" height="80" name="packageHierarchyTemplate" >
+                	<Label bindId="packageType" id="label_packageType" />
+                    <Label bindId="epc" id="label_epc"  />
+                </ItemTemplate>
+            </Templates>
+            <ListSection id="lsListSection"  >
+            	<ListItem id="liListItem" />
+            </ListSection>
+        </ListView>
+		<ActivityIndicator id="activityIndicator" />
+	</Window>
+</Alloy>

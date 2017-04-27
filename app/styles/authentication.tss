@@ -1,0 +1,271 @@
+".container" : {
+}
+"#imgStatus[formFactor=tablet]": {
+    top: 40,
+    height: 80,
+}
+"#imgStatus[formFactor=handheld]": {
+    top: 20,
+    height: 50,
+}
+"#lblStatus[formFactor=tablet]": {
+    top: 150,
+    height: Ti.UI.SIZE,
+    width: '100%',
+    backgroundColor: '#3D4051',
+    color: 'white',
+    opacity: '.9',
+    textAlign: 'center',
+    font: {
+    	fontSize: 36,
+    }
+}
+"#lblStatus[formFactor=handheld]": {
+    top: 70,
+    height: Ti.UI.SIZE,
+    width: '100%',
+    backgroundColor: '#3D4051',
+    color: 'white',
+    opacity: '.9',
+    textAlign: 'center',
+    font: {
+    	fontSize: 36,
+    }
+}
+"#lblMessage[formFactor=tablet]": {
+    top: 220,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    textAlign: 'center',
+    font: {
+    	fontSize: 22,
+    }
+}
+"#lblMessage[formFactor=handheld]": {
+    top: 130,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    textAlign: 'center',
+    font: {
+    	fontSize: 16,
+    }
+}
+"#lblDetails[formFactor=tablet]": {
+    top: 255,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    textAlign: 'center',
+    font: {
+    	fontSize: 18,
+    }
+}
+"#lblDetails[formFactor=handheld]": {
+    top: 165,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    textAlign: 'center',
+    font: {
+    	fontSize: 16,
+    }
+}
+"#lblStatus2[formFactor=tablet]": {
+    top: 315,
+    height: Ti.UI.SIZE,
+    width: '100%',
+    backgroundColor: '#989998',
+    color: 'white',
+    opacity: '.9',
+    textAlign: 'center',
+    font: {
+    	fontSize: 22,
+    }
+}
+"#lblStatus2[formFactor=handheld]": {
+    top: 225,
+    height: Ti.UI.SIZE,
+    width: '100%',
+    backgroundColor: '#989998',
+    color: 'white',
+    opacity: '.9',
+    textAlign: 'center',
+    font: {
+    	fontSize: 16,
+    }
+}
+"#svScrollView[formFactor=tablet]": {
+	top: 360,
+	width: "90%",
+	height: 480,
+	backgroundColor: "white",
+	opacity: ".93",
+	borderRadius: "10",
+}
+"#svScrollView[formFactor=handheld]": {
+	top: 270,
+	width: "80%",
+	height: 210,
+	backgroundColor: "white",
+	opacity: ".93",
+	borderRadius: "10",
+}
+"#lblEPCuriLabel[formFactor=tablet]": {
+    top: 30,
+    left: 10,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 22,
+    }
+}
+"#lblEPCuriLabel[formFactor=handheld]": {
+    top: 30,
+    left: 10,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 16,
+    }
+}
+"#lblEPCuri[formFactor=tablet]": {
+    top: 60,
+    left: 30,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 18,
+    }
+}
+"#lblEPCuri[formFactor=handheld]": {
+    top: 60,
+    left: 30,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 14,
+    }
+}
+"#lblNdcLabel[formFactor=tablet]": {
+    top: 90,
+    left: 10,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 22,
+    }
+}
+"#lblNdcLabel[formFactor=handheld]": {
+    top: 90,
+    left: 10,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 16,
+    }
+}
+"#lblNdc[formFactor=tablet]": {
+    top: 120,
+    left: 30,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 18,
+    }
+}
+"#lblNdc[formFactor=handheld]": {
+    top: 120,
+    left: 30,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 14,
+    }
+}
+"#lblManufacturerLabel[formFactor=tablet]": {
+    top: 150,
+    left: 10,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 22,
+    }
+}
+"#lblManufacturerLabel[formFactor=handheld]": {
+    top: 150,
+    left: 10,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 16,
+    }
+}
+"#lblManufacturer[formFactor=tablet]": {
+    top: 180,
+    left: 30,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 18,
+    }
+}
+"#lblManufacturer[formFactor=handheld]": {
+    top: 180,
+    left: 30,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 14,
+    }
+}
+"#lblUsageDirectionLabel[formFactor=tablet]": {
+    top: 210,
+    left: 10,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 22,
+    }
+}
+"#lblUsageDirectionLabel[formFactor=handheld]": {
+    top: 210,
+    left: 10,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 16,
+    }
+}
+"#lblUsageDirection[formFactor=tablet]": {
+    top: 240,
+    left: 30,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 18,
+    }
+}
+"#lblUsageDirection[formFactor=handheld]": {
+    top: 240,
+    left: 30,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    font: {
+    	fontSize: 14,
+    }
+}
+"#imgFirstImage[formFactor=tablet]": {
+    top: 270,
+    left: 10,
+    height: 200,
+}
+"#imgFirstImage[formFactor=handheld]": {
+    top: 270,
+    left: 10,
+    height: 100,
+}
+"#activityIndicator": {
+	top: '50%',
+	left: '50%',
+	style: Ti.UI.ActivityIndicatorStyle.BIG_DARK,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+}

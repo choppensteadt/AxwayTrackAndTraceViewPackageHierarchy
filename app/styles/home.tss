@@ -1,0 +1,33 @@
+".container" : {
+	backgoundColor: '#E9EAEA',
+}
+"#lblHomePageHelp1": {
+	top: 10,
+	left: 10,
+	font: {
+        fontSize: 28,
+    },
+}
+"#lblHomePageHelp2": {
+	top: 20,
+	left: 10,
+	font: {
+        fontSize: 20,
+    },
+}
+"#btnScanPackage": {
+	top: 30,
+	backgroundColor: "white",
+	color: 'black',
+	borderRadius: "10",
+	font: {
+        fontSize: 30,
+    },
+}
+"#activityIndicator": {
+	top: '30',
+	style: Titanium.UI.ActivityIndicatorStyle.BIG_DARK,
+	color: '#2A7AB0',
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+}
