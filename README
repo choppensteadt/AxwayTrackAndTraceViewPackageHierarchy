@@ -1,13 +1,21 @@
-Welcome to your Appcelerator Titanium Mobile Project
+Description
+The App extends Axway Track & Trace.  It provides the functionality to scan an EPCIS barcode on a container and determine what’s in it with as many levels of aggregation as required (i.e. bottle in a tray, tray in a box, box in a shipper, etc).  At the lowest saleable level, the app runs a serial number verification to ensure authenticity. 
+This is a repository of Swagger documents representing the HL7 FHIR REST API Implementation. Provided is a swagger document that represents the HL7 FHIR REST API Implementation that gives you access to all the FHIR resources. Also provided is a Swagger Document for key individual resources to make the experiences of the non-techie FHIR API consumers better.
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+Axway Track & Trace Version Compatibilty
 
+This artefact was successfully tested for the following versions:
 
+v3.4
 
-----------------------------------
-Stuff our legal folk make us say:
+Bug and Caveats
+For implementation notes, please see the readme file inside the app directory structure.
 
+Team
+Axway Team
+
+License
+Apache License 2.0 (refer to document [license] (/LICENSE))
 Appcelerator, Appcelerator Titanium and associated marks and logos are 
 trademarks of Appcelerator, Inc. 
 
