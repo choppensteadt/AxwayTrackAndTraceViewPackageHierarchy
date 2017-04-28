@@ -100,10 +100,10 @@ function btnLoginClicked() {
 			alert('Please enable location services');
 		}
 	} else if ($.swcDemoMode.value == true) {
-		Alloy.Globals.demoMode = true;		
-		var hostIP = '208.67.130.151';
-		var username = 'demo';
-		var password = 'demo';
+		Alloy.Globals.demoMode = true;
+		var hostIP = 'DEMO SERVER IP ADDRESS HERE';
+		var username = 'DEMO USER NAME HERE';
+		var password = 'DEMO PASSWORD HERE';
 		var country_code = 'US';
 		var postalCode = '85255';
 		
@@ -112,6 +112,8 @@ function btnLoginClicked() {
 }
 
 function login(hostIP, username, password, country_code, postal_code) {
+
+// Note the port is hardcoded to 8443.  This may need to change for your implementation
 
 	var url = "https://"+hostIP+":8443/trackntraceserver/services/ProductAuthentication";
 	

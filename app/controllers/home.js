@@ -10,10 +10,6 @@ function mnuLogoutClicked() {
 }
 
 function openScanWindow(event) {
-	//Alloy.Globals.currentSerialNumber = 'urn:epc:id:sgtin:0614141.232201.100CS00001';
-	//var packagehierarchy = Alloy.createController('packagehierarchy').getView();
-	//packagehierarchy.open();
-	
 	var destination = event.source.toDestination;
 	openScannerIfPermission(destination);
 }
@@ -35,7 +31,12 @@ var openScannerIfPermission = function(destination) {
 function openScanner(destination) {
 
 // Sets up the scanner and starts it in a new window.
-scanditsdk.appKey = "2waQEjM72/bJIDLKZAnQXW2A9qcT75k/9KakZWO1Rss";
+
+// The developer must obtain the scandit SDK and an API Key from www.scandit.com 
+// Paste the API Key into the codeline just below between the quotes
+// The scandit version should be 5.0.1 and the libraries must be copied into the modules/android/com.mirasense.scanditsdk directory
+
+scanditsdk.appKey = "PASTE API KEY HERE";
 scanditsdk.cameraFacingPreference = 0;
 	
     // Only after setting the app key instantiate the Scandit SDK Barcode Picker view

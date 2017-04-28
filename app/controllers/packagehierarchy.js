@@ -52,6 +52,8 @@ function getPackageHierarchy(epcURI) {
 
 	$.activityIndicator.show();
 
+// Note the port is hardcoded to 8443.  This may need to change for your implementation
+
 	var url = "https://"+Alloy.Globals.hostIP+":8443/trackntraceserver/services/GetItemStatusService";
 	
 	var getPackageHierarchyRequest = 
@@ -196,6 +198,8 @@ function authenticateProduct(EPCuri, country_code, postal_code) {
 	Alloy.Globals.EPCuri = EPCuri;
 	Alloy.Globals.CountryCode = country_code;
 	Alloy.Globals.PostalCode = postal_code;
+
+	// Note the port is hardcoded to 8443.  This may need to change for your implementation
 	
 	var url = "https://"+Alloy.Globals.hostIP+":8443/trackntraceserver/services/ProductAuthentication";
 			
