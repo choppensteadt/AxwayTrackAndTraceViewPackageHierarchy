@@ -10,7 +10,6 @@
                 <TextField id="txtPassword"/>
                 <Switch id="swcKeepMeSignedIn" onChange="swcKeepMeSignedInChecked"/>
                 <Button id="btnLogin" onClick="btnLoginClicked">Sign in</Button>
-                <Switch id="swcDemoMode"/>
 				<ActivityIndicator id="activityIndicator" />
             </View>
         </ScrollView>

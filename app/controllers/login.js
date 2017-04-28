@@ -1,5 +1,4 @@
 var args = $.args;
-$.swcDemoMode.value = false;
 
 // Disable the physical back button on the login screen
 function loginBackButtonPressed() {
@@ -16,14 +15,12 @@ Ti.App.addEventListener('cleanUpAfterLogoutEvent', function()
 		Alloy.Globals.password = null;
 		$.txtPassword.value = null;
 		$.txtPassword.focus();
-		$.swcDemoMode.value = false;
 	} else {
 		Alloy.Globals.hostIP = null;
 		Alloy.Globals.username = null;
 		Alloy.Globals.password = null;
 		$.txtUserName.value = null;
 		$.txtPassword.value = null;
-		$.swcDemoMode.value = false;
 		$.txtHostIP.focus();
 	}
 });
@@ -63,52 +60,41 @@ function btnLoginClicked() {
 
 	$.activityIndicator.show();
 
-	if ($.swcDemoMode.value == false) {
-	   	var hostIP = $.txtHostIP.value;
-	   	var username = $.txtUserName.value;
-		var password = $.txtPassword.value;
-	
-		if($.swcKeepMeSignedIn.value == true){
-			saveLoginInformationToProperties(username, hostIP);
-		}
-			
-		if (Ti.Geolocation.locationServicesEnabled) {
-			
-			Titanium.Geolocation.purpose = 'Get Current Location';
-			Titanium.Geolocation.getCurrentPosition(function(f) {
-				
-				if (f.error) {
-					$.activityIndicator.hide();
-		            alert('Error: ' + f.error);
-		        } else {
-		            var latitude = f.coords.latitude;
-		            var longitude = f.coords.longitude;
-		            
-		            Ti.Geolocation.reverseGeocoder(latitude, longitude, function(g) {
-		            	if (g.error) {
-		            		$.activityIndicator.hide();
-		            		Ti.API.error('Error: ' + g.error);
-		        		} else {
-		        			var places = g.places[0]
-		        			login(hostIP, username, password, places.country_code, places.postalCode);
-		        		}
-					});
-				}
-			});
-		} else {
-			$.activityIndicator.hide();
-			alert('Please enable location services');
-		}
-	} else if ($.swcDemoMode.value == true) {
-		Alloy.Globals.demoMode = true;
-		var hostIP = 'DEMO SERVER IP ADDRESS HERE';
-		var username = 'DEMO USER NAME HERE';
-		var password = 'DEMO PASSWORD HERE';
-		var country_code = 'US';
-		var postalCode = '85255';
+   	var hostIP = $.txtHostIP.value;
+   	var username = $.txtUserName.value;
+	var password = $.txtPassword.value;
+
+	if($.swcKeepMeSignedIn.value == true){
+		saveLoginInformationToProperties(username, hostIP);
+	}
 		
-		login(hostIP, username, password, country_code, postalCode);
-	} 
+	if (Ti.Geolocation.locationServicesEnabled) {
+		
+		Titanium.Geolocation.purpose = 'Get Current Location';
+		Titanium.Geolocation.getCurrentPosition(function(f) {
+			
+			if (f.error) {
+				$.activityIndicator.hide();
+	            alert('Error: ' + f.error);
+	        } else {
+	            var latitude = f.coords.latitude;
+	            var longitude = f.coords.longitude;
+	            
+	            Ti.Geolocation.reverseGeocoder(latitude, longitude, function(g) {
+	            	if (g.error) {
+	            		$.activityIndicator.hide();
+	            		Ti.API.error('Error: ' + g.error);
+	        		} else {
+	        			var places = g.places[0]
+	        			login(hostIP, username, password, places.country_code, places.postalCode);
+	        		}
+				});
+			}
+		});
+	} else {
+		$.activityIndicator.hide();
+		alert('Please enable location services');
+	}
 }
 
 function login(hostIP, username, password, country_code, postal_code) {

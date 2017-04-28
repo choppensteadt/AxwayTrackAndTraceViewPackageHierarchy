@@ -156,10 +156,6 @@
 	backgroundColor: "#407CA0",
 	borderRadius: "20",
 }
-"#swcDemoMode": {
-	top: 490,
-	color: "black",
-}
 "#activityIndicator": {
 	top: '50%',
 	left: '50%',
