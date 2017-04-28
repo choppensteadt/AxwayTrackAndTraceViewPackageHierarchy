@@ -21,16 +21,6 @@ function openChild(e) {
 	var epc = item.epc.text;
 	
 	getPackageHierarchy(epc);
-	
-	// item.epc.text = 'foo';  WORKED
-	// item.epc.backgroundColor = 'pink';  WORKED
-	// item.properties.backgroundColor = 'pink';  DID NOT WORK
-	// item.properties.color = "pink";  DID NOT WORK
-	// item.backgroundColor = 'pink';  DID NOT WORK
-	// item.setBackgroundColor("#E9EAEA");  DID NOT WORK
-	// Ti.API.info(JSON.stringify(item));
-	// alert(JSON.stringify(item));
-	// e.section.updateItemAt(e.itemIndex,item);
 }
 
 function openParent() {

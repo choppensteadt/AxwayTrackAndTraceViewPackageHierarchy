@@ -1,17 +1,16 @@
-Welcome to Alloy. Prepare to be amazed.
-=======================================
+Axway Track & Trace ViewPackageHierarchy Sample App
+===================================================
 
-Titanium Alloys are metals which contain a mixture of Titanium and other chemical elements. Such Alloys have very high tensile strength and toughness (even at extreme temperatures). They are light weight, have extraordinary corrosion resistance and the ability to withstand extreme temperatures [1].  
+------------------------------
+ViewPackageHierarchy Specifics
+------------------------------
 
-Alloy for Titanium provides you, the developer, with the ability to run fast, jump high and generally code like an amazing superstar. 
+This App was written using Axway Appcelerator Titanium SDK 6.0.0 for Android with limited tested support for different sized handheld and tablets
+This App requires the Scandit SDK, which can be obtained from www.scandit.com.
+The ScanditSDK handles scanning of barcodes, without it, this app will not funtion
+This App requires a configured instance of Axway Track & Trace version 3.4 or higher, since it makes use of the GetItemStatusService that was introduced in T&T 3.4
 
-Codestrong!
-
-[1] http://en.wikipedia.org/wiki/Titanium_alloy
-
--------------------------
-Now to the serious stuff.
--------------------------
+------------------------------
 
 Here's how your Alloy directory is laid out.
 
